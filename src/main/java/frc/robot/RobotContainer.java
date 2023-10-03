@@ -34,13 +34,14 @@ public class RobotContainer {
   private final IntakeCommand intakeCommand;
   private final SwerveModule flModule, frModule, rlModule, rrModule;
   private final Translation2d flModuleTranslation, frModuleTranslation, rlModuleTranslation, rrModuleTranslation;
-  private XboxController driverController, commandController;
+  private XboxController driverController;
+  //private XboxController commandController;
   private final SendableChooser<Supplier<Command>> autonChooser;
 
   public RobotContainer() {
 
     driverController = new XboxController(0);
-    commandController = new XboxController(1);
+    //commandController = new XboxController(1);
 
     flModuleTranslation = new Translation2d(.336, .336);
     frModuleTranslation = new Translation2d(.336, -.336);
